@@ -9,9 +9,10 @@ import Navbar from './compoenents/Navbar';
 import Dashboard from './pages/Dashboard';
 
 const App = () => {
+  
   return (
     <div>
-      <Navbar/>
+      <Navbar />
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/register' element={<Signup />} />

@@ -66,3 +66,20 @@
     color: rgba(0, 255, 187, 0.732);
   }
   
+
+
+  .main{
+    display: flex;
+    flex-wrap: wrap;  /* if content is outside the 1-D (row) then it move content in next line */
+  }
+  
+  .shopping-card{
+    justify-content: space-between;
+    background-color: skyblue;
+    padding: 10px;
+    font-size: large;
+  }
+  
+  .product-item {
+    padding: 20px;
+  }

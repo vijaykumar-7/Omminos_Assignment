@@ -23,8 +23,9 @@ const Navbar = () => {
                 <div>
                   {/* <li><NavLink to={"/dashboard"}>Dashboard</NavLink></li> */}
                   <li><NavLink to={`/dashboard/${userauth?.user?.role===1 ? "admin":"user"}`}>Dashboard</NavLink></li>
-                  <i className="fa-solid fa-cart-shopping text-light" style={{ fontSize: 25, cursor: "pointer", alignItems: "center",marginTop: 20, color: "white" }}></i>
-                  
+                  <li style={{ fontSize: 20, cursor: "pointer", marginTop: 12, color: "white" }}>
+                    cart <sup>0</sup>
+                  </li>
                   <li><NavLink onClick={logout} to={"/login"}>Logout</NavLink></li>
                 </div>
               ) : (
